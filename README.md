@@ -62,10 +62,15 @@ Run the server:
 ```bash
 npm run dev
 ```
-Access the application:
+Access the api:
 Open http://localhost:3000 in your browser.
 
-## Docker
+
+## Access application
+In VS code using live server extension, run the index.html in live server.
+
+
+## Docker - to do - not functional
 
 ### 1. Build the Docker Image
 
