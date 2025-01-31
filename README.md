@@ -59,6 +59,12 @@ PORT=3000
 DB_URL=your_database_url_here
 ```
 
+## Set Up database
+```
+npm run setup-db
+```
+
+
 ## Docker
 
 ### 1. Build the Docker Image
