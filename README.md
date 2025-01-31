@@ -45,15 +45,9 @@ cd la fosse hackathon/server
 Install dependencies:
 `npm install`
 
-Run the server:
-`npm run dev`
-
-Access the application:
-Open http://localhost:3000 in your browser.
-
 
 ## Set Up Environment Variables
-Create a .env file in the root directory and add:
+Make a supabase account, create a .env file in the root directory and add:
 ```
 PORT=3000
 DB_URL=your_database_url_here
@@ -64,6 +58,12 @@ DB_URL=your_database_url_here
 npm run setup-db
 ```
 
+Run the server:
+```bash
+npm run dev
+```
+Access the application:
+Open http://localhost:3000 in your browser.
 
 ## Docker
 
