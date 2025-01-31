@@ -1,0 +1,25 @@
+# version: '3.9'
+services:
+  diaries-mvc:
+    container_name: diaries-mvc
+    image: ismailp97/diaries-mvc:0.0.1.RELEASE
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - diaries-db
+    networks:
+      - diaries-network
+
+  # The value of 'DB_HOST' we reference in the MVC Dockerfile  
+  diaries-db:
+    container_name: diaries-db
+    image: ismailp97/diaries-db:0.0.1.RELEASE
+    ports:
+      - "5432:5432"
+    restart: always
+    networks:
+      - diaries-network
+      
+networks:
+  diaries-network:
