@@ -68,22 +68,3 @@ Open http://localhost:3000 in your browser.
 
 ## Access application
 In VS code using live server extension, run the index.html in live server.
-
-
-## Docker - to do - not functional
-
-### 1. Build the Docker Image
-
-```bash
-# must be in same dir as dockerfile
-cd server
-docker build -t YOUR_USERNAME/diaries-mvc:0.0.1.RELEASE .
-```
-
-### 2. Run the Docker Container in detached mode on port 3000
-
-```bash
-docker run -d -p 3000:3000 YOUR_USERNAME/diaries-mvc:0.0.1.RELEASE
-```
-
-The API should now be accessible on http://localhost:3000/
